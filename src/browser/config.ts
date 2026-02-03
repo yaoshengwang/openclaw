@@ -6,6 +6,7 @@ import {
   DEFAULT_BROWSER_CONTROL_PORT,
 } from "../config/port-defaults.js";
 import { isLoopbackHost } from "../gateway/net.js";
+import { resolveAtlasExecutableForPlatform } from "./chrome.executables.js";
 import {
   DEFAULT_ATLAS_BROWSER_COLOR,
   DEFAULT_ATLAS_BROWSER_PROFILE_NAME,
@@ -15,7 +16,6 @@ import {
   DEFAULT_BROWSER_DEFAULT_PROFILE_NAME,
   DEFAULT_OPENCLAW_BROWSER_PROFILE_NAME,
 } from "./constants.js";
-import { resolveAtlasExecutableForPlatform } from "./chrome.executables.js";
 import { allocateCdpPort, CDP_PORT_RANGE_START, getUsedPorts } from "./profiles.js";
 
 export type ResolvedBrowserConfig = {
