@@ -299,7 +299,7 @@ function buildAtlasFetchPrompt(params: {
   ].join("\n");
 }
 
-function extractAtlasJsonPayload(text: string): unknown | null {
+function extractAtlasJsonPayload(text: string): unknown {
   const trimmed = text.trim();
   if (!trimmed) {
     return null;
